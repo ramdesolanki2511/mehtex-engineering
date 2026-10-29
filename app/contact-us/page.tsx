@@ -1,0 +1,5 @@
+import PageIntro from "../components/PageIntro";
+import ContactForm from "../components/ContactForm";
+import { media } from "../data";
+export const metadata = { title: "Contact Mehtex Engineering" };
+export default function ContactPage() { return <main><PageIntro eyebrow="CONTACT MEHTEX" title="Let’s talk about your next part." copy="Send your component requirements and our team will help you identify the right manufacturing path." image={`${media}958A0136-ratio.jpg`} /><section className="contact-page section-wrap"><div className="contact-details" data-aos="fade-right"><p className="eyebrow">GET IN TOUCH</p><h2>Talk with our team.</h2><p>For enquiries about aluminium castings, machining, tooling or an upcoming project, contact us directly.</p><a href="tel:+917984100895">+91 79841 00895</a><a href="mailto:sales@mehtex.com">sales@mehtex.com</a><span>Naroda GIDC, Ahmedabad, Gujarat, India</span><a className="whatsapp-inline" href="https://wa.me/917984100895" target="_blank" rel="noreferrer">Chat with Mehtex on WhatsApp ↗</a></div><div data-aos="fade-left"><ContactForm/></div></section></main>; }
